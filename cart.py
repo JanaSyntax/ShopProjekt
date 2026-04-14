@@ -33,6 +33,7 @@ def add_product_to_cart():
 def show_cart():
     for product in cart:
         print(product["name"], product["price"])
+    # print info when cart is empty
         
 
 # calculates cart price sum

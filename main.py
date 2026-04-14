@@ -12,17 +12,20 @@ def main():
         print("1 - Produkt hinzufügen")
         print("2 - Warenkorb anzeigen")
         print("3 - Checkout durchführen")
+        # todo bonus: abmelden und beenden trennen, damit man sich abmelden 
+        # und mit einem anderen benutzer anmelden kann
         print("4 - Abmelden und beenden")
 
         auswahl = input("\nIhre Auswahl: ")
 
         # todo call funtion from cart
         if auswahl == "1":
-            print_products()
-            produkt = select_product()
-            if produkt:
-                add_product_to_cart(produkt)
-                print(f"{produkt['name']} wurde hinzugefügt!")
+            add_product_to_cart()
+            # print_products()
+            # produkt = select_product()
+            # if produkt:
+            #     add_product_to_cart(produkt)
+            #     print(f"{produkt['name']} wurde hinzugefügt!")
 
         elif auswahl == "2":
             show_cart()
@@ -37,3 +40,5 @@ def main():
 
         else:
             print("Ungültige Eingabe!")
+
+main()

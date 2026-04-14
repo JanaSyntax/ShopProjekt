@@ -32,9 +32,11 @@ def _print_products_def():
 # output -> produkt mit diesem index zurückgeben
 def select_product(number):
     print("--------------------") 
-    if 0 <= number < len(_listeVonProdukten):
+    
+    int_number = int(number)
+    if 0 <= int_number < len(_listeVonProdukten):
         # print(number, _listeVonProdukten[number])
-        return _listeVonProdukten[number]
+        return _listeVonProdukten[int_number]
     else:
         print("Produkt existiert nicht")
         return None
