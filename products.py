@@ -33,7 +33,8 @@ def _print_products_def():
 def select_product(number):
     print("--------------------") 
     if 0 <= number < len(_listeVonProdukten):
-        print(number, _listeVonProdukten[number])
+        # print(number, _listeVonProdukten[number])
+        return _listeVonProdukten[number]
     else:
         print("Produkt existiert nicht")
 
