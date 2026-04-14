@@ -16,6 +16,7 @@ def main():
 
         auswahl = input("\nIhre Auswahl: ")
 
+        # todo call funtion from cart
         if auswahl == "1":
             print_products()
             produkt = select_product()
