@@ -37,11 +37,12 @@ def select_product(number):
         return _listeVonProdukten[number]
     else:
         print("Produkt existiert nicht")
+        return None
 
 
-print_products();
+# print_products();
 
-select_product(1);
+# select_product(1);
 
 
 
