@@ -48,7 +48,7 @@ def register():
     print("Error: Passwords do not match.")
     return False
 
-#def logout():
+def logout():
     print("\nLogging out... You have been safely disconnected.")
 
 def start_login_process():
