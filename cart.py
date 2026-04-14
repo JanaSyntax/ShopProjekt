@@ -15,7 +15,7 @@ def add_product_to_cart():
         cart.append(product)
         while True:
             cancel = False
-            answer = input("Möchtest du ein weiteres Produkt hinzufügen? \n'j' für Ja\n'n' für Nein")
+            answer = input("Möchtest du ein weiteres Produkt hinzufügen? \n'j' für Ja\n'n' für Nein ")
             if answer == "j":
                 break
             elif answer == "n":
